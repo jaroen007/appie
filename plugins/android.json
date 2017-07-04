@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ga.inf1i.WaterUp"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "ga.inf1i.WaterUp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ga.inf1i.WaterUp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ga.inf1i.WaterUp"
+        }
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+    
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * data:;" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>WaterUp</title>
+</head>
+    <body>
+		<div class="app">
+			<div class="loadingScreen">
+				<div class="splash_main">
+					<img class="splash_title" src="img/splash_logo.png" alt="WaterUp">
+				</div>
+			</div>
+
+			<div class="main hide">		
+				<div class="header">
+					<div class="options">
+						<span class="option">mqtt</span>
+					</div>
+					<div class="header_logo">
+						<img src="img/logo.png" width="30" height="40" alt="WaterUp">
+					</div>
+				</div>
+				<div class="pageView">
+					<div class="container">
+						<div class="row" id="row"></div>
+					</div>
+				</div>
+				
+				<!-- this is a modal template. you can ignore this and call it whenever you need a modal. You can fill it up by using js-->
+				<div class="modal fade" id="modal_template" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 id="modal_title">
+							<!-- Title here -->
+						</h4>
+					  </div>
+					  <div class="modal-body">
+						  <div id="modal_body_alerts">
+							<!-- Alerts here -->
+						  </div>
+						  <div id="modal_body_contents">
+							<!-- Contents here -->
+						  </div>
+					  </div>
+					  <div class="modal-footer">
+						<!-- Buttons here -->
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div> 		
+		</div>   
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/browserMqtt.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/circle-progress.js"></script>
+		<script src="https://use.fontawesome.com/926077661f.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
